@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Savar İlaçlama & Temizlik</title>
+
+    <!-- FAVICON (SEKME İKONU) -->
+    <link rel="icon" type="image/png" href="image/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- İkon Kütüphanesi -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
+    <!-- Ana CSS Dosyamız -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GALERİ SAYFASINA ÖZEL STİLLER -->
+    <style>
+        .gallery-page-section {
+            padding: 100px 0;
+            background-color: #f8f9fa;
+            min-height: 60vh; /* Sayfa içeriği az olsa bile footer aşağıda dursun */
+        }
+        .gallery-page-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .gallery-title {
+            text-align: center;
+            font-size: 36px;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+        }
+        .gallery-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px auto;
+            font-size: 16px;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        /* Menüde aktif olan sayfayı belirtmek için stil */
+        .main-nav .nav-links li.active a {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================== HEADER BÖLÜMÜ ================== -->
+<header class="main-header">
+    <div class="container header-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="image/logo.png" alt="Savar Logo" class="logo-img">
+            SAVAR İlaçlama ve Temizlik Hizmetleri
+        </a>
+        <!-- Navigasyon Menüsü (FİNAL VE DOĞRU HALİ) -->
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li class="dropdown-container">
+                    <!-- Bu link artık her sayfadan doğru çalışır -->
+                    <a href="index.html#hizmetlerimiz">Hizmetlerimiz <span class="arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ev-temizligi.html">Ev & Daire Temizliği</a></li>
+                        <li><a href="ofis-temizligi.html">Ofis Temizliği</a></li>
+                        <li><a href="hasere-kontrol.html">Haşere Kontrol</a></li>
+                        <!-- DÜZELTİLDİ -->
+                        <li><a href="dezenfektan-uygulamalari.html">Dezenfektan Uygulamaları</a></li>
+                        <!-- DÜZELTİLDİ -->
+                        <li><a href="duzenli-temizlik.html">Düzenli Temizlik Sözleşmeleri</a></li>
+                        <li><a href="insaat-sonrasi-temizlik.html">İnşaat Sonrası Temizlik</a></li>
+                        <!-- DÜZELTİLDİ -->
+                        <li><a href="bahce-temizligi.html">Bahçe Temizliği</a></li>
+                    </ul>
+                </li>
+                <!-- Bu linkler artık her sayfadan anasayfadaki doğru bölüme gider -->
+                <li><a href="index.html#neden-biz">Neden Biz?</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
+                <li><a href="kurumsal.html">Kurumsal</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobil Menü için Hamburger İkonu -->
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</header>
+    <main>
+        <!-- ================== GALERİ BÖLÜMÜ BAŞLANGIÇ ================== -->
+        <section class="gallery-page-section">
+            <div class="container">
+                <h2 class="gallery-title">Çalışmalarımızdan Kareler</h2>
+                <p class="gallery-subtitle">
+                    Kalitemizi ve profesyonelliğimizi yaptığımız işlerle kanıtlıyoruz.Çalışma anlarımızdan bazı görselleri aşağıda bulabilirsiniz.
+                </p>
+
+                <!-- Elfsight Kodun Buraya Yerleştirildi -->
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-bf181618-4899-4d05-bb04-c676b416feb3" data-elfsight-app-lazy></div>
+                <!-- Elfsight Kodu Bitiş -->
+
+            </div>
+        </section>
+        <!-- ================== GALERİ BÖLÜMÜ BİTİŞ ================== -->
+    </main>
+
+    <!-- ================== FOOTER BÖLÜMÜ ================== -->
+    <footer class="site-footer">
+    <div class="container">
+        <!-- 4 SÜTUNLU ANA ALAN -->
+        <div class="footer-main">
+
+            <!-- Sütun 1: Logo ve İletişim -->
+            <div class="footer-column about-column">
+                <a href="index.html" class="footer-logo">
+                    <img src="image/logo.png" alt="Savar Temizlik Logosu">
+                </a>
+                <p class="footer-tagline">Kurumsal Çözüm Ortağınız</p>
+                <ul class="footer-contact-list">
+                    <!-- İkonların görünmesi için aşağıdaki notu oku -->
+                    <li><i class="lnr lnr-map-marker"></i><span>Ümraniye / İstanbul</span></li>
+                    <li><i class="lnr lnr-phone-handset"></i><a href="tel:+905337071649">0533 707 16 49</a></li>
+                    <li><i class="lnr lnr-envelope"></i><a href="mailto:info@savartemizlik.com">info@savartemizlik.com</a></li>
+                </ul>
+            </div>
+
+            <!-- Sütun 2: Kurumsal Linkler -->
+            <div class="footer-column">
+                <h4>Kurumsal</h4>
+                <ul class="footer-link-list">
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="kurumsal.html">Kurumsal Politikalar</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="gorusleriniz.html">Görüşlerinizle Gelişiyoruz</a></li>
+                    <li><a href="belgeler/sertifikalar.pdf" target="_blank">Sertifikalarımız</a></li>
+                    <li><a href="kvkk.html">KVKK Aydınlatma Metni</a></li>
+                </ul>
+            </div>
+
+            <!-- Sütun 3: Ana Hizmetler -->
+            <div class="footer-column">
+                <h4>Hizmetlerimiz</h4>
+                <ul class="footer-link-list">
+                    <li><a href="ev-temizligi.html">Ev & Daire Temizliği</a></li>
+                    <li><a href="ofis-temizligi.html">Ofis Temizliği</a></li>
+                    <li><a href="insaat-sonrasi-temizlik.html">İnşaat Sonrası Temizlik</a></li>
+                    <li><a href="hasere-kontrol.html">Haşere Kontrol</a></li>
+                    <li><a href="dezenfektan-uygulamalari.html">Dezenfeksiyon Hizmetleri</a></li>
+                    <li><a href="personel-temini.html">Personel Temini</a></li>
+                </ul>
+            </div>
+            
+            <!-- Sütun 4: Hızlı Erişim -->
+            <div class="footer-column">
+                <h4>Hızlı Erişim</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <!-- DÜZELTME: Bu linkler artık her sayfadan doğru çalışır -->
+                    <li><a href="index.html#hizmetlerimiz">Hizmetler Bölümü</a></li>
+                    <li><a href="index.html#neden-biz">Neden Biz Bölümü</a></li>
+                    <li><a href="index.html#iletisim">İletişim Formu</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- ALT BİLGİ BANDI (Copyright) -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2024 Savar Temizlik - Tüm Hakları Saklıdır.</p>
+        </div>
+    </div>
+</footer>
+    <!-- YENİ PROFESYONEL FOOTER BİTİŞ -->
+
+    <!-- ================== JAVASCRIPT KODLARI ================== -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mainNav = document.querySelector('.main-nav');
+        hamburger.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

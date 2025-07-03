@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görüşlerinizle Gelişiyoruz | Savar Temizlik</title>
+    
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container header-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="image/logo.png" alt="Savar Logo" class="logo-img">
+            SAVAR İlaçlama ve Temizlik Hizmetleri
+        </a>
+        <!-- Navigasyon Menüsü (FİNAL VE DOĞRU HALİ) -->
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li class="dropdown-container">
+                    <!-- Bu link artık her sayfadan doğru çalışır -->
+                    <a href="index.html#hizmetlerimiz">Hizmetlerimiz <span class="arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ev-temizligi.html">Ev & Daire Temizliği</a></li>
+                        <li><a href="ofis-temizligi.html">Ofis Temizliği</a></li>
+                        <li><a href="hasere-kontrol.html">Haşere Kontrol</a></li>
+                        <!-- DÜZELTİLDİ -->
+                        <li><a href="dezenfektan-uygulamalari.html">Dezenfektan Uygulamaları</a></li>
+                        <!-- DÜZELTİLDİ -->
+                        <li><a href="duzenli-temizlik.html">Düzenli Temizlik Sözleşmeleri</a></li>
+                        <li><a href="insaat-sonrasi-temizlik.html">İnşaat Sonrası Temizlik</a></li>
+                        <!-- DÜZELTİLDİ -->
+                        <li><a href="bahce-temizligi.html">Bahçe Temizliği</a></li>
+                    </ul>
+                </li>
+                <!-- Bu linkler artık her sayfadan anasayfadaki doğru bölüme gider -->
+                <li><a href="index.html#neden-biz">Neden Biz?</a></li>
+                <li><a href="index.html#iletisim">İletişim</a></li>
+                <li><a href="kurumsal.html">Kurumsal</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobil Menü için Hamburger İkonu -->
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</header>
+
+    <main style="padding-top: 80px;">
+
+        <!-- SAYFA BAŞLIĞI -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Görüşlerinizle Gelişiyoruz</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Anasayfa</a> » 
+                    <a href="kurumsal.html">Kurumsal</a> »
+                    <span>Görüşleriniz</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- "GÖRÜŞLERİNİZLE GELİŞİYORUZ" (İLETİŞİM FORMU) BÖLÜMÜ -->
+        <section class="feedback-form-section" id="gorusleriniz">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 30px;">
+                    <p class="section-subtitle" style="margin-bottom: 0;">Hizmetlerimiz, talepleriniz veya herhangi bir konuda görüş, öneri ve şikayetlerinizi bize aşağıdaki form aracılığıyla iletmekten çekinmeyin.</p>
+                </div>
+                
+                <div class="feedback-form-container">
+                    <form action="https://formsubmit.co/hasucubeoyuncu@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="tesekkurler.html">
+                        <input type="hidden" name="_subject" value="Görüşleriniz Sayfasından Yeni Geri Bildirim!">
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="form-row">
+                            <div class="form-group"><label for="isim">İsim - Soyisim *</label><input type="text" id="isim" name="isim" required></div>
+                            <div class="form-group"><label for="telefon">Telefon No *</label><input type="tel" id="telefon" name="telefon" required></div>
+                        </div>
+                        <div class="form-group"><label for="konu">Konu *</label><input type="text" id="konu" name="Konu" required></div>
+                        <div class="form-group"><label for="mesaj">Mesajınız</label><textarea id="mesaj" name="mesaj" rows="5"></textarea></div>
+                        <button type="submit" class="submit-button">Mesajı Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<footer class="site-footer">
+    <div class="container">
+        <!-- 4 SÜTUNLU ANA ALAN -->
+        <div class="footer-main">
+
+            <!-- Sütun 1: Logo ve İletişim -->
+            <div class="footer-column about-column">
+                <a href="index.html" class="footer-logo">
+                    <img src="image/logo.png" alt="Savar Temizlik Logosu">
+                </a>
+                <p class="footer-tagline">Kurumsal Çözüm Ortağınız</p>
+                <ul class="footer-contact-list">
+                    <!-- İkonların görünmesi için aşağıdaki notu oku -->
+                    <li><i class="lnr lnr-map-marker"></i><span>Ümraniye / İstanbul</span></li>
+                    <li><i class="lnr lnr-phone-handset"></i><a href="tel:+905337071649">0533 707 16 49</a></li>
+                    <li><i class="lnr lnr-envelope"></i><a href="mailto:info@savartemizlik.com">info@savartemizlik.com</a></li>
+                </ul>
+            </div>
+
+            <!-- Sütun 2: Kurumsal Linkler -->
+            <div class="footer-column">
+                <h4>Kurumsal</h4>
+                <ul class="footer-link-list">
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="kurumsal.html">Kurumsal Politikalar</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="gorusleriniz.html">Görüşlerinizle Gelişiyoruz</a></li>
+                    <li><a href="belgeler/sertifikalar.pdf" target="_blank">Sertifikalarımız</a></li>
+                    <li><a href="kvkk.html">KVKK Aydınlatma Metni</a></li>
+                </ul>
+            </div>
+
+            <!-- Sütun 3: Ana Hizmetler -->
+            <div class="footer-column">
+                <h4>Hizmetlerimiz</h4>
+                <ul class="footer-link-list">
+                    <li><a href="ev-temizligi.html">Ev & Daire Temizliği</a></li>
+                    <li><a href="ofis-temizligi.html">Ofis Temizliği</a></li>
+                    <li><a href="insaat-sonrasi-temizlik.html">İnşaat Sonrası Temizlik</a></li>
+                    <li><a href="hasere-kontrol.html">Haşere Kontrol</a></li>
+                    <li><a href="dezenfektan-uygulamalari.html">Dezenfeksiyon Hizmetleri</a></li>
+                    <li><a href="personel-temini.html">Personel Temini</a></li>
+                </ul>
+            </div>
+            
+            <!-- Sütun 4: Hızlı Erişim -->
+            <div class="footer-column">
+                <h4>Hızlı Erişim</h4>
+                <ul class="footer-link-list">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <!-- DÜZELTME: Bu linkler artık her sayfadan doğru çalışır -->
+                    <li><a href="index.html#hizmetlerimiz">Hizmetler Bölümü</a></li>
+                    <li><a href="index.html#neden-biz">Neden Biz Bölümü</a></li>
+                    <li><a href="index.html#iletisim">İletişim Formu</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- ALT BİLGİ BANDI (Copyright) -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2024 Savar Temizlik - Tüm Hakları Saklıdır.</p>
+        </div>
+    </div>
+</footer>
+<script>
+// MOBİL MENÜ İÇİN
+const hamburger = document.querySelector('.hamburger');
+const mainNav = document.querySelector('.main-nav');
+
+hamburger.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+});
+
+// YUMUŞAK KAYDIRMA İÇİN
+document.querySelectorAll('a.nav-scroll').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            // Header'ın yüksekliğini hesaba katarak kaydırma
+            const headerOffset = 80; // Header yüksekliği
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+        // Mobil menü açıksa, linke tıklayınca kapansın
+        if (mainNav.classList.contains('active')) {
+            mainNav.classList.remove('active');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
