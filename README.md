@@ -54,10 +54,10 @@ Bu proje statik bir web sitesi olduğu için herhangi bir derleme veya kurulum g
 
 1. Projeyi bilgisayarınıza klonlayın:
    ```bash
-   git clone https://github.com/[KULLANICI-ADINIZ]/[PROJE-ADINIZ].git
+   https://github.com/EmirhanKmen/Ornek-Tanitim-sitesi-1.git
    ```
 2. Proje klasörüne gidin:
    ```bash
-   cd [PROJE-ADINIZ]
+   cd Ornek-Tanitim-sitesi-1
    ```
 3. `index.html` dosyasını herhangi bir modern web tarayıcısında açmanız yeterlidir.
